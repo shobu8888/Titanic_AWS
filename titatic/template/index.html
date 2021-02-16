@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <p> Enter Age of the passenger to pridict wethere he/she was survied on Titanic submerge</p>
+    <form action="{% url 'result' %}" >
+      <div class="">
+        <p>Enter Pclass: <input type="text" name="Pclass"></p>
+        <p>Enter Sex: <input type="text" name="Sex"></p>
+        <p>Enter Age: <input type="text" name="Age"></p>
+        <p>Enter SibSp: <input type="text" name="SibSp"></p>
+        <p>Enter Parch: <input type="text" name="Parch"></p>
+        <p>Enter Fare: <input type="text" name="Fare"></p>
+        <p>Enter Embarked: <input type="text" name="Embarked"></p>
+        <p>Enter Title: <input type="text" name="Title"></p>
+        <input type="Submit" >
+      </div>
+    </form>
+  </body>
+</html>
