@@ -5,9 +5,12 @@
     <title></title>
   </head>
   <body>
+    {% load static %}
     <h1>Home Page</h1>
     <p> Enter Age of the passenger to pridict wethere he/she was survied on Titanic submerge</p>
-    <<p>Version 2 of the page</p>
+    <p>Version 2 of the page</p>
+    <button type="button" name="button" onclick="clickme()"> click js</button>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
     <form action="{% url 'result' %}" >
       <div class="">
         <p>Enter Pclass: <input type="text" name="Pclass"></p>
@@ -21,5 +24,8 @@
         <input type="Submit" >
       </div>
     </form>
+    <script type="text/javascript" src = "{% static 'mainjs.js' %}">
+
+    </script>
   </body>
 </html>
